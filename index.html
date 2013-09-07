@@ -88,13 +88,12 @@ liveTimelineService.onNewItem(...);
         </section>
 
         <section>
-          <pre><code data-trim contenteditable>
-http://workshop.invaders.co:8000/faye
-          </code></pre>
-        </section>
-
-        <section>
           <a href="http://faye.jcoglan.com/browser.html">Faye::Client</a>
+          <pre><code data-trim contenteditable>
+client = new Faye::Client('http://workshop.invaders.co:8000/faye');
+client.subscribe('/wall_items', ...);
+client.subscribe('/users', ...);
+          </code></pre>
         </section>
       </div>
     </div>
